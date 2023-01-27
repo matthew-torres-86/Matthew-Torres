@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home | Matthew Torres</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+<header>
+    
+    <nav>
+        <div class="fullnav">
+        <a href = index.html><img class = "logo" src = "Matthew Torres.png"></a>
+        <ul>
+            <li><a href=bio.html>Bio</a></li>
+        <li class = "dropdown">
+            
+            <div>
+                
+            <a href=cs.html>Programming Portfolio</a>
+            <div class="dropdown-content">
+                <a href=Web.html>Web Programming</a>
+                <a href=C.html>C Languages</a>
+                <a href=Python.html>Python</a>
+            </div>
+        </li>
+        
+
+    </ul></div>
+
+    <div class="mobilenav">
+        <a href = index.html><img class = "logo" src = "Tufts Dining Logo.png" style= "width: 30%"></a><br>
+        <li class = "dropdown" style="list-style-type: none; width: 100%;">
+            <div>
+            <a> Menu <img src="hamburger-icon.png" width="14px" style="bottom: 0px"></a>
+            <div class="dropdown-content" style="width: 98%; ">
+                <a href=about.html >About</a>
+                <a href=tuftonia-hall.html>Tuftonia Hall</a>
+                <a href=cafes.html>Cafes</a>
+                <a href=meal-plans.html>Meal Plans</a>
+                <a href=nutrition.html>Nutrition</a>
+                <a href=contact.html>Contact Us</a>
+            </div>
+        </li>
+
+    </div>
+
+</nav>
+</header>
+<body>
+    <!--Slideshow container-->
+    <div class = "slideshow-container">
+    <div class = "slide fade">
+        <img src = "tufts.jpeg" class = "right">
+        <div class="caption left" ><h2>Tufts University Student</h2><p>Matthew Torres studies Computer Science and Music, Sound and Culture at Tufts University's School of Arts and Sciences. He's expected to Graduate in May 2024</p>
+        
+        <button><a href="cafes.html">Learn More</a></button>
+        </div>
+    </div> 
+
+    <div class = "slide fade">
+        <img src = "SpringAwakening.png" class = "left">
+        <div class="caption right"> <h2>Music Director</h2><p>Matthew has been featured in many Musical performances at Tufts as a Music Director/Conductor. </p>
+
+            <button><a href="tuftonia-hall.html">Learn More</a></button></div>
+    </div> 
+
+    <div class = "slide fade">
+        <img src = "veggies.jpg">
+        <div class="caption left"> <h2>Options For Everyone</h2><p>Whether you’re vegan, vegetarian, gluten-free, nut-free or dairy-free, we have numerous options for any diet. And now with our Jumbo meal plan, there’s no limit on the number of times you can swipe in during a meal period. </p>
+            <button><a href="meal-plans.html">Learn More</a></button></div>
+    </div> 
+
+    <!--Slideshow buttons-->
+    <a class="prev" onClick = "changeSlides(-1)">&#10094;</a>
+    <a class="next" onClick = "changeSlides(1)">&#10095;</a>
+    </div>
+
+<!--Slideshow dots-->
+<div style="text-align:center; background-color:#3f8fe5">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+<script>
+var slideIndex = 1;
+timeOutID = 0;
+showSlides(slideIndex);
+
+
+// Next/previous controls
+function nextSlide() {
+  changeSlides(1);
+}
+
+function changeSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  clearTimeout(timeOutID)
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  timeOutID = setTimeout(nextSlide, 7000);
+}
+</script>
+
+
+</body>
+<footer>
+    <div style="display: inline-block; width: 100%;">
+    <ul>
+        <li><a href = "https://www.tufts.edu/" target="_blank">Tufts University</a></li>
+        <li><a href = "http://as.tufts.edu/" target="_blank">School of Arts and Sciences</a></li>
+        <li><a href = "https://engineering.tufts.edu/" target="_blank">School of Engineering</a></li>
+        <li><a href = "https://medicine.tufts.edu/" target="_blank">School of Medicine</a></li>
+        <li><a href = "https://dental.tufts.edu/" target="_blank">School of Dental Medicine</a></li>
+        <li><a href = "https://vet.tufts.edu/" target="_blank">School of Veterinary Medicine</a></li>
+        <li><a href="https://www.tufts.edu/about/privacy">Privacy</a></li>
+    </ul>
+    <div class="copyright" style="font-size: 12px;">
+        &copy; Error 404: D. Estra, K. Hysenbelli, M. Red, M. Torres.
+    </div>
+</div>
+    
+</footer>
+</html>
