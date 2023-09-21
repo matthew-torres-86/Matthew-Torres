@@ -11,13 +11,7 @@
             padding: 50px;
             height: 800px;
         }
-        .socials{
-            padding-left: 40px;
-        }
-        .socials a{
-            display: inline;
-            padding: 0;
-        }
+        
     </style>
 </head>
 <header>
@@ -58,7 +52,7 @@
                 <a href=cs.html>MUSICIAN
                 </a>
                 <div class="dropdown-content">
-                    <a href=Conducting.html>Conductor</a>
+                    <a href=Conducting.html class="active">Conductor</a>
                     <a href=piano.html>Pianist/Organist</a>
                 </div>
             </li>
@@ -69,10 +63,10 @@
     </ul></div>
 
     <div class="mobilenav">
-        <a href = index.html><img class = "logo" src = "Tufts Dining Logo.png" style= "width: 30%"></a><br>
+        <a href = index.html><img class = "logo" src = "Logo.png" style= "width: 30%"></a><br>
         <li class = "dropdown" style="list-style-type: none; width: 100%;">
             <div>
-            <a> Menu <img src="hamburger-icon.png" width="14px" style="bottom: 0px"></a>
+            <a> Menu </a>
             <div class="dropdown-content" style="width: 98%; ">
             </div>
         </li>
@@ -83,22 +77,15 @@
 </header>
 <body>
     <div class="backgroundLayer">
-        <img src="Matthew Torres.png" width="100%">
+        <img src="conducting.png" width="100%">
     </div>
 
     <div class="bio">
-        <h2 class="hide">Bio</h2>
-        <img src="tufts.jpeg" width="300px" class="hide" style="float:right; padding:30px;">
-        <p class="hide">Matthew Torres is a Senior at Tufts University, where he is double majoring in 
-        Computer Science and Music, Sound, and Culture. He was born in Worcester, MA in 2001. 
-        From a young age he showed an interest in computers as well as music. 
-        He began playing violin as early as kindergarten, and switched to piano in second grade. 
-        He learned to play Trumpet starting in fourth grade, guitar and percussion in sixth, and the french horn and pipe organ in high school, all while learning to code in HTML, Java, and Python.
-        <br><br>
-        He graduated from Grafton High School in 2020, and started his first year at Tufts in the height of the COVID-19 Pandemic. 
-        He devoted much of his time to his studies, taking both CS and Music classes including Data Structures and Algorithms, Music Theory courses, and Conducting. 
-        Once restrictions were lifted, he made up for lost music time by taking on a number of music directing positions for theatrical productions at Tufts.
-    </p>
+        <script>
+            fetch('https://matthewt1.sgedu.site/projects.json')
+                .then((response) => response.json())
+                .then((json) => console.log(json));
+        </script>
     </div>
     <!-- <div id = "Upcoming">
         <h2>Upcoming Projects</h2>

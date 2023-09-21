@@ -1,0 +1,58 @@
+{
+    "projects": [
+    {
+        "Title": "Mamma Mia", 
+        "Type": "Theater", 
+        "Role": "Assistant Music Director", 
+        "Organization": "Tufts Torn Ticket II",
+        "Image": "MammaMia.jpg",
+        "Dates": "December 2nd, 2021",
+        "Description": "The first big Student-Run musical post COVID. Matt wrote arrangements, assisted in rehearsal, and performed on Piano."
+    },
+    {
+        "Title": "Spring Awakening", 
+        "Type": "Theater", 
+        "Role": "Music Director", 
+        "Organization": "Tufts Department of Theater, Dance, and Performance Studies",
+        "Image": "SpringAwakening.jpg",
+        "Dates": "March 3rd, 2022",
+        "Description": "Matt worked alongside professional directors, designers, and technicians to deliver a spectacular performance of this evocative show. He ran pit rehersals, assisted the cast in vocal rehearsals, and coordinated with production staff"
+    },
+    {
+        "Title": "Lightning Thief", 
+        "Type": "Theater", 
+        "Role": "Co-Music Director", 
+        "Organization": "Tufts Torn Ticket II",
+        "Image": "LightningThief.jpg",
+        "Dates": "April 15th, 2022",
+        "Description": "Matt directed the pit and assisted in vocal rehearsals for this production."
+    },
+    {
+        "Title": "Chicago", 
+        "Type": "Theater", 
+        "Role": "Pit Conductor", 
+        "Organization": "Tufts Torn Ticket II",
+        "Image": "Chicago.jpg",
+        "Dates": "April 28th, 2022",
+        "Description": "Matt was called in with a week's notice to conduct the pit for this production."
+    },
+    {
+        "Title": "Into the Woods", 
+        "Type": "Theater", 
+        "Role": "Music Director", 
+        "Organization": "Tufts Torn Ticket II",
+        "Image": "IntoTheWoods.jpg",
+        "Dates": "November 17th, 2022",
+        "Description": "Matt planned and lead vocal and pit rehearsals for this challenging and successful production."
+    },
+    {
+        "Title": "Little Women", 
+        "Type": "Theater", 
+        "Role": "Music Director", 
+        "Organization": "Tufts Torn Ticket II",
+        "Image": "LittleWomen.jpg",
+        "Dates": "April 13th, 2023",
+        "Description": "Matt planned and lead vocal and pit rehearsals for this production, with a condensed three-week timeline."
+    }
+]
+}
